@@ -1,0 +1,233 @@
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.page-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000;
+  color: #f4f0f0;
+  padding: 50px;
+  gap: 40px;
+}
+.text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.logo-text {
+  max-width: 45%;
+}
+.logo-text h1 {
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.logo-image {
+  max-width: 50%;
+  text-align: right;
+}
+.logo-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+h1 {
+  font-size: 60px;
+}
+/* presentation*/
+h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 20px 0;
+  color: #fdfefc;
+}
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  color: white;
+  background-color: #000000;
+  padding: 40px 20px;
+}
+.advantage {
+  margin: 20px 0;
+}
+
+.advantage img {
+  width: 250px;
+  height: auto;
+}
+
+.advantage h3 {
+  font-size: 35px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.advantage p {
+  font-size: 25px;
+  line-height: 1.5;
+}
+/* button */
+/* Основний стиль кнопок */
+.btn {
+  padding: 40px 40px; /* Більше простору по боках для більшої кнопки */
+  background-color: red; /* Основний колір фону */
+  color: white; /* Колір тексту */
+  text-decoration: none; /* Забираємо підкреслення */
+  font-weight: bold; /* Жирний текст */
+  font-size: 25px; /* Збільшений розмір шрифту */
+  border-radius: 10px; /* Заокруглені кути */
+  display: inline-block; /* Блочний елемент, щоб можна було додавати відступи */
+  transition: background 0.3s ease, transform 0.3s ease; /* Додано ефект при зміні кольору фону і масштабу */
+  cursor: pointer; /* Курсор у вигляді руки, коли на кнопці */
+}
+
+/* Ефект при наведенні */
+.btn:hover {
+  background-color: #e63e00; /* Трохи інший відтінок червоного */
+  transform: scale(1.1); /* Легке збільшення розміру кнопки */
+}
+
+/* Ефект активної кнопки (коли вона натиснута) */
+.btn:active {
+  background-color: #c93300; /* Темніший відтінок червоного */
+  transform: scale(1); /* Повернення до нормального розміру */
+}
+
+/* Ефект фокусу на кнопці */
+.btn:focus {
+  outline: none; /* Видалення стандартної обводки при фокусі */
+  box-shadow: 0 0 10px rgba(255, 99, 71, 0.6); /* Легка тінь для фокусу */
+}
+
+/* page 3 */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  gap: 30px;
+}
+.hero .text-block {
+  flex: 1;
+}
+.hero .program-image {
+  flex: 1;
+  text-align: right;
+}
+.hero .program-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.hero description {
+  font-size: 100px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 30px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+/* trainers */
+.trainers {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  color: white;
+  background-color: #000000;
+  padding: 40px 20px;
+}
+.trainers {
+  margin: 20px 0;
+}
+
+.trainers img {
+  width: 300px;
+  height: auto;
+}
+
+.trainers h3 {
+  font-size: 35px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.trainers p {
+  font-size: 25px;
+  line-height: 1.5;
+}
+.contact-info {
+  font-size: 35px; /* Задає розмір шрифту */
+}
+/* form action*/
+form {
+  width: 80%; /* Ширина форми */
+  max-width: 600px; /* Максимальна ширина форми */
+  margin: 20px auto; /* Відступи для вирівнювання */
+  padding: 35px; /* Відступи всередині форми */
+  background-color: #f3ecec; /* Колір фону */
+  border-radius: 10px; /* Заокруглені кути */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Легка тінь */
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px; /* Розмір шрифту для міток */
+}
+
+input,
+textarea {
+  width: 95%; /* Ширина полів - на всю ширину контейнера */
+  padding: 12px; /* Відступи всередині полів */
+  margin-bottom: 20px; /* Відступи між полями */
+  border: 1px solid #ccc; /* Сіра рамка для полів */
+  border-radius: 5px; /* Заокруглені кути */
+  font-size: 16px; /* Розмір шрифту для полів */
+}
+
+button {
+  padding: 15px 30px;
+  background-color: #007bff; /* Колір кнопки */
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px; /* Розмір шрифту для кнопки */
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Темніший відтінок синього при наведенні */
+}
+.sent p {
+  text-align: center;
+  font-size: 35px; /* Розмір шрифту для абзаців */
+  line-height: 1.5; /* Висота рядка */
+  margin-bottom: 20px; /* Відступи між абзацами */
+}
