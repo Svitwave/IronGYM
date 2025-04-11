@@ -189,9 +189,9 @@ form {
   max-width: 600px; /* Максимальна ширина форми */
   margin: 20px auto; /* Відступи для вирівнювання */
   padding: 35px; /* Відступи всередині форми */
-  background-color: #f3ecec; /* Колір фону */
+  background-color: #121212; /* Колір фону */
   border-radius: 10px; /* Заокруглені кути */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Легка тінь */
+  box-shadow: 0 0 10px rgba(13, 13, 13, 0.1); /* Легка тінь */
 }
 
 label {
@@ -205,7 +205,7 @@ textarea {
   width: 95%; /* Ширина полів - на всю ширину контейнера */
   padding: 12px; /* Відступи всередині полів */
   margin-bottom: 20px; /* Відступи між полями */
-  border: 1px solid #ccc; /* Сіра рамка для полів */
+  border: 1px solid #121111; /* Сіра рамка для полів */
   border-radius: 5px; /* Заокруглені кути */
   font-size: 16px; /* Розмір шрифту для полів */
 }
@@ -231,3 +231,4 @@ button:hover {
   line-height: 1.5; /* Висота рядка */
   margin-bottom: 20px; /* Відступи між абзацами */
 }
+/
