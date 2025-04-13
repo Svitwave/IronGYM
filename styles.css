@@ -16,7 +16,7 @@ html {
   color: #f4f0f0;
   padding: 50px;
   gap: 40px;
-  min-height: 100vh; /* Забезпечує висоту для вертикального вирівнювання */
+  min-height: 10vh; /* Забезпечує висоту для вертикального вирівнювання */
 }
 
 .text-block {
@@ -25,25 +25,28 @@ html {
   justify-content: center; /* Опускає текст донизу */
   gap: 30px;
   flex: 1;
-  max-width: 45%;
-  padding-top: 100px; /* Відступ зверху для вирівнювання з логотипом */
+  max-width: 30%;
+  padding-top: 30px; /* Відступ зверху для вирівнювання з логотипом */
 }
 
 .logo-name {
   color: rgba(248, 234, 234, 0.699);
   text-align: left;
   text-transform: uppercase;
-  font-size: 150px;
-  line-height: 2.9;
+  font-size: 100px;
+  line-height: 2;
   margin: 0;
 }
 
 .page-title {
   text-align: left;
   text-transform: uppercase;
-  font-size: 100px;
+  font-size: 36px;
+  font-weight: bold;
   margin: 0;
-  line-height: 1.2;
+  line-height: 1.3;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Додає тінь до тексту */
 }
 
 .btn {
@@ -54,7 +57,7 @@ html {
   font-size: 18px;
   text-decoration: none;
   border-radius: 8px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .logo-image {
@@ -142,8 +145,8 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px;
-  gap: 30px;
+  padding: 30px;
+  gap: 20px;
 }
 .hero .text-block {
   flex: 1;
@@ -165,7 +168,7 @@ h2 {
 .hero p {
   font-size: 30px;
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 /* trainers */
 .trainers {
@@ -201,52 +204,59 @@ h2 {
 }
 /* form action*/
 form {
-  width: 50%; /* Ширина форми */
-  max-width: 900px; /* Максимальна ширина форми */
-  margin: 20px auto; /* Відступи для вирівнювання */
-  padding: 35px; /* Відступи всередині форми */
-  background-color: #121212; /* Колір фону */
-  border-radius: 10px; /* Заокруглені кути */
-  box-shadow: 0 0 10px rgba(13, 13, 13, 0.1); /* Легка тінь */
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 40px;
+  background-color: #0d0d0d; /* Темний фон */
+  border: 2px solid #ff6600; /* Помаранчева рамка */
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 102, 0, 0.5); /* Помаранчева тінь */
 }
 
 label {
   display: block;
   margin-bottom: 8px;
-  font-size: 16px; /* Розмір шрифту для міток */
+  font-size: 16px;
+  color: #ffffff; /* Білий текст */
 }
 
 input,
 textarea {
-  width: 95%; /* Ширина полів - на всю ширину контейнера */
-  padding: 12px; /* Відступи всередині полів */
-  margin-bottom: 20px; /* Відступи між полями */
-  border: 1px solid #121111; /* Сіра рамка для полів */
-  border-radius: 5px; /* Заокруглені кути */
-  font-size: 16px; /* Розмір шрифту для полів */
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #333333; /* Темна рамка */
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #1a1a1a; /* Темний фон полів */
+  color: #ffffff; /* Білий текст */
 }
 
 button {
   padding: 15px 30px;
-  background-color: #007bff; /* Колір кнопки */
-  color: white;
+  background-color: #ff6600; /* Помаранчевий фон */
+  color: #ffffff; /* Білий текст */
   font-weight: bold;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 18px; /* Розмір шрифту для кнопки */
+  font-size: 18px;
   border: none;
   transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #0056b3; /* Темніший відтінок синього при наведенні */
+  background-color: #cc5200; /* Темніший помаранчевий при наведенні */
 }
+
 .sent p {
   text-align: center;
-  font-size: 35px; /* Розмір шрифту для абзаців */
-  line-height: 1.5; /* Висота рядка */
-  margin-bottom: 20px; /* Відступи між абзацами */
+  font-size: 35px;
+  line-height: 1.9;
+  margin-bottom: 10px;
+  color: #ffffff; /* Білий текст */
 }
+
 /* kontakts*/
 .contact {
   background-color: #1a1a1a;
