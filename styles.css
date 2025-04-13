@@ -8,50 +8,66 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
-.page-title {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 80px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 .logo {
   display: flex;
-  align-items: center;
+  align-items: center; /* Вирівнює контент по нижньому краю */
   justify-content: space-between;
   background-color: #000000;
   color: #f4f0f0;
   padding: 50px;
   gap: 40px;
+  min-height: 100vh; /* Забезпечує висоту для вертикального вирівнювання */
 }
+
 .text-block {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-.logo-text {
+  justify-content: center; /* Опускає текст донизу */
+  gap: 30px;
+  flex: 1;
   max-width: 45%;
+  padding-top: 100px; /* Відступ зверху для вирівнювання з логотипом */
 }
-.logo-text h1 {
-  font-size: 60px;
+
+.logo-name {
+  color: rgba(248, 234, 234, 0.699);
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 150px;
+  line-height: 2.9;
+  margin: 0;
+}
+
+.page-title {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 100px;
+  margin: 0;
   line-height: 1.2;
-  margin-bottom: 30px;
-  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 30px;
 }
 
 .logo-image {
   max-width: 50%;
   text-align: right;
 }
+
 .logo-image img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
 }
-h1 {
-  font-size: 60px;
-}
+
 /* presentation*/
 h2 {
   font-size: 40px;
@@ -137,9 +153,9 @@ h2 {
   text-align: right;
 }
 .hero .program-image img {
-  max-width: 100%;
+  max-width: 98%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .hero description {
   font-size: 100px;
@@ -185,8 +201,8 @@ h2 {
 }
 /* form action*/
 form {
-  width: 80%; /* Ширина форми */
-  max-width: 600px; /* Максимальна ширина форми */
+  width: 50%; /* Ширина форми */
+  max-width: 900px; /* Максимальна ширина форми */
   margin: 20px auto; /* Відступи для вирівнювання */
   padding: 35px; /* Відступи всередині форми */
   background-color: #121212; /* Колір фону */
@@ -231,4 +247,54 @@ button:hover {
   line-height: 1.5; /* Висота рядка */
   margin-bottom: 20px; /* Відступи між абзацами */
 }
-/
+/* kontakts*/
+.contact {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 4px solid orange;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: orange;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  text-align: left;
+}
+
+.contact-info,
+.social-links {
+  flex: 1 1 250px;
+  font-size: 25px;
+}
+
+.contact a {
+  color: cyan;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: orange;
+  transform: scale(1.05); /* Збільшення при наведенні */
+}
+
+.contact img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) saturate(100) invert(78%) sepia(88%) saturate(299%)
+    hue-rotate(130deg) brightness(100%) contrast(95%); /* Змінює колір іконок на білий */
+  transition: filter 0.3s ease; /* Додає плавний перехід для фільтра */
+}
